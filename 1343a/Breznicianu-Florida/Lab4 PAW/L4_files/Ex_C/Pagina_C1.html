@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS_C1</title>
+<style>
+    #hd {
+        font-variant: small-caps;
+        color: rgb(255, 98, 255);
+    }
+
+    h1 {
+        color: blue;
+        background-color: #cccc00;
+    }
+
+    .center, p {
+        text-align: center;
+        color: red;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 1px solid green;
+    }
+
+    th, td {
+        padding: 15px;
+    }
+
+    caption {
+        background-color: orange;
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+        padding: 12px;
+    }
+
+    th {
+        background-color: magenta;
+        color: black;
+        text-align: center;
+    }
+
+    td {
+        background-color: orange;
+        color: black;
+        text-align: left;
+    }
+
+    td.center {
+        background-color: magenta;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+</style>
+</head>
+
+<body id="hd">
+
+<h1 id="hd">Tabel special</h1>
+<p style="color: orange;">Un tabel cu "celule lipite"</p>
+
+<div>
+<table>
+<caption>Echipe si hobby-uri</caption>
+
+<tr>
+    <th>Echipa</th>
+    <th>Nume</th>
+    <th colspan="2">Pasiuni</th>
+</tr>
+
+<tr>
+    <td rowspan="3" class="center">Munte</td>
+    <td>Popescu</td>
+    <td>calatorii</td>
+    <td>filatelie</td>
+</tr>
+
+<tr>
+    <td>Ionescu</td>
+    <td>planorism</td>
+    <td>sah</td>
+</tr>
+
+<tr>
+    <td>Andrei</td>
+    <td>alpinism</td>
+    <td>tenis</td>
+</tr>
+
+<tr>
+    <td rowspan="4" class="center">Mare</td>
+    <td>Georgescu</td>
+    <td>plaja</td>
+    <td>dans</td>
+</tr>
+
+<tr>
+    <td>Gigescu</td>
+    <td>surf</td>
+    <td>samba</td>
+</tr>
+
+<tr>
+    <td>Mintescu</td>
+    <td>politica</td>
+    <td>delicateturi</td>
+</tr>
+
+<tr>
+    <td>Alin</td>
+    <td>surf</td>
+    <td>volei</td>
+</tr>
+
+</table>
+</div>
+
+<!--
+Exercitiul 4:
+Am adaugat chenare intre celule, border-collapse
+pentru contopirea chenarelor si padding pentru
+spatierea textului.
+
+Exercitiul 5:
+Am adaugat cate un membru nou in fiecare echipa:
+Andrei la Munte si Alin la Mare, fiecare cu doua pasiuni.
+Am ajustat rowspan pentru a cuprinde toti membrii.
+
+Exercitiul 6:
+Am formatat tabelul cu titlu alb pe fundal portocaliu,
+antet magenta, celule portocalii, echipe magenta,
+chenare verzi si spatiere generoasa.
+-->
+
+</body>
+</html>
